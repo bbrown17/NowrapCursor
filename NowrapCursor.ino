@@ -29,7 +29,6 @@ void setup()                    // run once, when the sketch starts
 
 void loop()  // run over and over again
 {
-  //SongOne();
   shift();
   DrawPx(xcoord,ycoord,Blue); // draw dot
   DisplaySlate();
