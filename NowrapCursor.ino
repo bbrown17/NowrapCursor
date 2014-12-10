@@ -27,19 +27,6 @@ void setup()                    // run once, when the sketch starts
   
 }
 
-void SongOne()
-{
-  DrawPx (3,7,Red); DisplaySlate(); delay(250); 
-  Tone_Start(ToneC5, 100); delay(125);
-  DrawPx (7,3,Green); DisplaySlate(); delay(250);
-  Tone_Start(ToneE5, 100); delay(125);
-  DrawPx (3,0,Blue); DisplaySlate(); delay(250);
-  Tone_Start(ToneG5, 100); delay(125);
-  DrawPx (0,3,Violet); DisplaySlate(); delay(500);
-  Tone_Start(ToneF5, 100); delay(125);
-  ClearSlate(); 
-}
-
 void loop()  // run over and over again
 {
   //SongOne();
