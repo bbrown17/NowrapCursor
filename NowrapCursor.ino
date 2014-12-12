@@ -44,8 +44,6 @@ void shift() // taken from Maze_Game
   {
     if (xcoord < 7)
       xcoord = xcoord + 1; // indented because belongs to inner if statement; could also say xcoord++
-        if (ReadPx(xcoord, ycoord) == Green)
-          xcoord = xcoord -1; // as soon as user lands on green pixel, go +1 pixels to original position
     if (xcoord == 7)
       Tone_Start (ToneC3,100); 
   }    
@@ -53,8 +51,6 @@ void shift() // taken from Maze_Game
   {
     if (xcoord > 0)
       xcoord = xcoord - 1;
-        if (ReadPx(xcoord, ycoord) == Green)
-          xcoord = xcoord +1;
     if (xcoord == 0)
       Tone_Start (ToneC3,100);  
   }    
@@ -62,8 +58,6 @@ void shift() // taken from Maze_Game
   {
     if (ycoord < 7)
       ycoord = ycoord + 1;
-      if (ReadPx(xcoord, ycoord) == Green)
-        ycoord = ycoord -1; // as soon as user lands on green pixel, go -1 pixels to original position
     if (ycoord == 7)
       Tone_Start (ToneC3,100); // play error sound when go off screen
   }    
@@ -72,8 +66,6 @@ void shift() // taken from Maze_Game
   {
     if (ycoord > 0)
       ycoord = ycoord - 1;
-        if (ReadPx(xcoord, ycoord) == Green)
-          ycoord = ycoord +1;
     if (ycoord == 0)
       Tone_Start (ToneC3,100); // play error sound when go off screen  
   } 
